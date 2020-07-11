@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FC4801FA-C273-4BB8-B84C-4E7BF4BB3C9D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SinglePageFormMenu</RootNamespace>
+    <AssemblyName>SinglePageFormMenu</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CalabrezaControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CalabrezaControl.Designer.cs">
+      <DependentUpon>CalabrezaControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeliveryControl.Designer.cs">
+      <DependentUpon>DeliveryControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EggControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EggControl.Designer.cs">
+      <DependentUpon>EggControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmConstrucaoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EmConstrucaoControl.Designer.cs">
+      <DependentUpon>EmConstrucaoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuContatoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuContatoControl.Designer.cs">
+      <DependentUpon>MenuContatoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuEnderecoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuEnderecoControl.Designer.cs">
+      <DependentUpon>MenuEnderecoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuNutritionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuNutritionControl.Designer.cs">
+      <DependentUpon>MenuNutritionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPagamentoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuPagamentoControl.Designer.cs">
+      <DependentUpon>MenuPagamentoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MortadelaControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MortadelaControl.Designer.cs">
+      <DependentUpon>MortadelaControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrincipalControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PrincipalControl.Designer.cs">
+      <DependentUpon>PrincipalControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormMenu.Designer.cs">
+      <DependentUpon>WinFormMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CalabrezaControl.resx">
+      <DependentUpon>CalabrezaControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeliveryControl.resx">
+      <DependentUpon>DeliveryControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EggControl.resx">
+      <DependentUpon>EggControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmConstrucaoControl.resx">
+      <DependentUpon>EmConstrucaoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuContatoControl.resx">
+      <DependentUpon>MenuContatoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuEnderecoControl.resx">
+      <DependentUpon>MenuEnderecoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuNutritionControl.resx">
+      <DependentUpon>MenuNutritionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPagamentoControl.resx">
+      <DependentUpon>MenuPagamentoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MortadelaControl.resx">
+      <DependentUpon>MortadelaControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrincipalControl.resx">
+      <DependentUpon>PrincipalControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormMenu.resx">
+      <DependentUpon>WinFormMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
