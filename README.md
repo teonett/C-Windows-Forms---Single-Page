@@ -3,7 +3,7 @@
 <p>Simple example of single windows forms page.</p>
 
 
-<img src="https://github.com/teonett/CSharp-Windows-Forms-Single-Page/blob/master/Images/singleformmenu.gif>
+<img src="https://github.com/teonett/CSharp-Windows-Forms-Single-Page/blob/master/Images/singleformmenu.gif">
 
 <p>
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by
@@ -14,4 +14,3 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public
 
 You should have received a copy of the GNU General Public License along with this program.  If not, see <http://www.gnu.org/licenses/>
 </p>
-
